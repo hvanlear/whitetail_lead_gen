@@ -1,0 +1,300 @@
+<!-- Testimonials Section Component for Astro -->
+<section class='testimonials-section py-5'>
+  <div class='container py-4'>
+    <h2 class='text-center text-white display-5 fw-bold mb-5'>
+      What Our Clients Say
+    </h2>
+
+    <!-- Mobile View (Single Testimonial) -->
+    <div class='d-block d-lg-none'>
+      <div
+        id='testimonialCarouselMobile'
+        class='carousel slide'
+        data-bs-ride='carousel'
+      >
+        <div class='carousel-inner'>
+          <!-- Testimonial 1 -->
+          <div class='carousel-item active'>
+            <div class='testimonial-card p-4 rounded'>
+              <div class='testimonial-content'>
+                <div class='quote-icon mb-3'>"</div>
+                <p class='mb-4 text-white'>
+                  Working with Whitetail Properties changed everything for us.
+                  They marketed our 120-acre farm perfectly, highlighting the
+                  excellent soil conditions and timber value that other realtors
+                  completely missed. Within the first season of listing, we had
+                  multiple qualified buyers interested in our property!
+                </p>
+                <div class='rating mb-2'>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                </div>
+                <div class='client-info'>
+                  <span class='client-name text-white fw-bold'>Mike D.</span>
+                  <span class='client-location text-white-50 ms-2'
+                    >Madison County, IL</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class='carousel-item'>
+            <div class='testimonial-card p-4 rounded'>
+              <div class='testimonial-content'>
+                <div class='quote-icon mb-3'>"</div>
+                <p class='mb-4 text-white'>
+                  I was impressed by how knowledgeable the Whitetail team was
+                  about hunting properties. They understood exactly what
+                  features would attract serious hunters and priced my land
+                  accordingly. Sold for 15% more than I expected in just 45
+                  days!
+                </p>
+                <div class='rating mb-2'>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                </div>
+                <div class='client-info'>
+                  <span class='client-name text-white fw-bold'>Sarah K.</span>
+                  <span class='client-location text-white-50 ms-2'
+                    >Pike County, MO</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class='carousel-item'>
+            <div class='testimonial-card p-4 rounded'>
+              <div class='testimonial-content'>
+                <div class='quote-icon mb-3'>"</div>
+                <p class='mb-4 text-white'>
+                  After my property sat on the market for a year with another
+                  realtor, Whitetail Properties sold it in 3 months! Their
+                  marketing strategy and targeted approach to finding the right
+                  buyers made all the difference.
+                </p>
+                <div class='rating mb-2'>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                  <i class='bi bi-star-fill text-warning'></i>
+                </div>
+                <div class='client-info'>
+                  <span class='client-name text-white fw-bold'>Robert J.</span>
+                  <span class='client-location text-white-50 ms-2'
+                    >Clay County, KS</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class='carousel-indicators position-relative mt-3'>
+          <button
+            type='button'
+            data-bs-target='#testimonialCarouselMobile'
+            data-bs-slide-to='0'
+            class='active'
+            aria-current='true'
+            aria-label='Testimonial 1'></button>
+          <button
+            type='button'
+            data-bs-target='#testimonialCarouselMobile'
+            data-bs-slide-to='1'
+            aria-label='Testimonial 2'></button>
+          <button
+            type='button'
+            data-bs-target='#testimonialCarouselMobile'
+            data-bs-slide-to='2'
+            aria-label='Testimonial 3'></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop View (Multiple Testimonials) -->
+    <div class='d-none d-lg-block'>
+      <div
+        id='testimonialCarouselDesktop'
+        class='carousel slide'
+        data-bs-ride='carousel'
+      >
+        <div class='carousel-inner'>
+          <!-- First Slide - 3 testimonials -->
+          <div class='carousel-item active'>
+            <div class='row'>
+              <!-- Testimonial 1 -->
+              <div class='col-md-4'>
+                <div class='testimonial-card p-4 h-100 rounded'>
+                  <div class='testimonial-content'>
+                    <div class='quote-icon mb-3'>"</div>
+                    <p class='mb-4 text-white'>
+                      Working with Whitetail Properties changed everything for
+                      us. They marketed our 120-acre farm perfectly,
+                      highlighting the excellent soil conditions and timber
+                      value that other realtors completely missed. Within the
+                      first season of listing, we had multiple qualified buyers
+                      interested in our property!
+                    </p>
+                    <div class='mt-auto'>
+                      <div class='rating mb-2'>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                      </div>
+                      <div class='client-info'>
+                        <span class='client-name text-white fw-bold'
+                          >Mike D.</span
+                        >
+                        <span class='client-location text-white-50 ms-2'
+                          >Madison County, IL</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class='col-md-4'>
+                <div class='testimonial-card p-4 h-100 rounded'>
+                  <div class='testimonial-content'>
+                    <div class='quote-icon mb-3'>"</div>
+                    <p class='mb-4 text-white'>
+                      I was impressed by how knowledgeable the Whitetail team
+                      was about hunting properties. They understood exactly what
+                      features would attract serious hunters and priced my land
+                      accordingly. Sold for 15% more than I expected in just 45
+                      days!
+                    </p>
+                    <div class='mt-auto'>
+                      <div class='rating mb-2'>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                      </div>
+                      <div class='client-info'>
+                        <span class='client-name text-white fw-bold'
+                          >Sarah K.</span
+                        >
+                        <span class='client-location text-white-50 ms-2'
+                          >Pike County, MO</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class='col-md-4'>
+                <div class='testimonial-card p-4 h-100 rounded'>
+                  <div class='testimonial-content'>
+                    <div class='quote-icon mb-3'>"</div>
+                    <p class='mb-4 text-white'>
+                      After my property sat on the market for a year with
+                      another realtor, Whitetail Properties sold it in 3 months!
+                      Their marketing strategy and targeted approach to finding
+                      the right buyers made all the difference.
+                    </p>
+                    <div class='mt-auto'>
+                      <div class='rating mb-2'>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                        <i class='bi bi-star-fill text-warning'></i>
+                      </div>
+                      <div class='client-info'>
+                        <span class='client-name text-white fw-bold'
+                          >Robert J.</span
+                        >
+                        <span class='client-location text-white-50 ms-2'
+                          >Clay County, KS</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more carousel items if needed for pagination -->
+        </div>
+
+        <!-- Carousel Controls (optional for desktop) -->
+        <button
+          class='carousel-control-prev'
+          type='button'
+          data-bs-target='#testimonialCarouselDesktop'
+          data-bs-slide='prev'
+        >
+          <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+          <span class='visually-hidden'>Previous</span>
+        </button>
+        <button
+          class='carousel-control-next'
+          type='button'
+          data-bs-target='#testimonialCarouselDesktop'
+          data-bs-slide='next'
+        >
+          <span class='carousel-control-next-icon' aria-hidden='true'></span>
+          <span class='visually-hidden'>Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Minimal custom CSS */
+  .testimonials-section {
+    background-color: #1e1c1a;
+  }
+
+  .testimonial-card {
+    background-color: #46433f;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-icon {
+    font-size: 3rem;
+    line-height: 1;
+    color: #d4b978;
+  }
+
+  /* Custom indicators for mobile carousel */
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6c757d;
+    opacity: 0.5;
+  }
+
+  .carousel-indicators button.active {
+    background-color: #fff;
+    opacity: 1;
+  }
+</style>

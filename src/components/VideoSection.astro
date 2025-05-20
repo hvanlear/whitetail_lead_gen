@@ -1,0 +1,56 @@
+<!-- Video Section Component for Astro -->
+<section class='video-section py-5'>
+  <div class='container py-3'>
+    <!-- Mobile View (Stacked) -->
+    <div class='d-block d-lg-none'>
+      <h2 class='display-5 fw-bold text-center mb-4'>
+        See What Makes Our Sales Process Special
+      </h2>
+
+      <!-- Video Embed (Responsive) -->
+      <div class='ratio ratio-16x9 mb-4 rounded overflow-hidden shadow'>
+        <iframe
+          src='https://www.youtube.com/embed/Ptukw3cxTEo'
+          title='Why Choose Whitetail Properties?'
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Caption Text -->
+      <p class='text-center lead'>
+        Watch how we helped the Johnson family sell their 80-acre hunting
+        property
+      </p>
+    </div>
+
+    <!-- Desktop View (Side by Side) -->
+    <div class='d-none d-lg-flex row align-items-center'>
+      <!-- Video on the Left -->
+      <div class='col-lg-6 pe-lg-4'>
+        <div class='ratio ratio-16x9 rounded overflow-hidden shadow'>
+          <iframe
+            src='https://www.youtube.com/embed/Ptukw3cxTEo'
+            title='Why Choose Whitetail Properties?'
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Text on the Right -->
+      <div class='col-lg-6 ps-lg-4'>
+        <h2 class='display-5 fw-bold mb-4'>
+          See What Makes Our Sales Process Special
+        </h2>
+        <p class='lead'>
+          Watch how we helped the Johnson family sell their 80-acre hunting
+          property
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Only minimal custom CSS for the border line at bottom */
+  .video-section {
+    border-bottom: 1px solid #dee2e6;
+  }
+</style>

@@ -1,0 +1,197 @@
+---
+// This is a self-contained hero section with integrated form
+---
+
+<section class='hero-section position-relative'>
+  <!-- Dark Overlay -->
+  <div class='overlay position-absolute top-0 start-0 w-100 h-100'></div>
+
+  <!-- Content Container -->
+  <div class='container position-relative h-100 py-5'>
+    <div class='row h-100 align-items-center'>
+      <!-- Left Column: Hero Text -->
+      <div class='col-lg-6 text-white mb-5 mb-lg-0'>
+        <h1 class='hero-title fw-bold mb-4'>Expert Land Solutions</h1>
+        <p class='lead'>
+          Our specialized team connects buyers with exceptional properties and
+          helps sellers showcase their land's unique features that discerning
+          land enthusiasts appreciate.
+        </p>
+      </div>
+
+      <!-- Right Column: Form Card -->
+      <div class='col-lg-5 offset-lg-1'>
+        <div class='bg-white rounded shadow p-4'>
+          <h2 class='h3 text-center mb-4'>Lets Get Started</h2>
+          <form>
+            <!-- Name Field -->
+            <div class='mb-3'>
+              <label for='name' class='form-label lead'
+                >Name <span class='text-danger'>*</span></label
+              >
+              <input
+                type='text'
+                class='form-control'
+                id='name'
+                placeholder='e.g. John Smith'
+                required
+              />
+            </div>
+
+            <!-- Email Field -->
+            <div class='mb-3'>
+              <label for='email' class='form-label lead'
+                >Email <span class='text-danger'>*</span></label
+              >
+              <input
+                type='email'
+                class='form-control'
+                id='email'
+                placeholder='john@doe.com'
+                required
+              />
+            </div>
+
+            <!-- Phone Field -->
+            <div class='mb-3'>
+              <label for='phone' class='form-label lead'>Phone</label>
+              <input
+                type='tel'
+                class='form-control'
+                id='phone'
+                placeholder='XXX XXX-XXXX'
+              />
+            </div>
+
+            <!-- Postal Code Field -->
+            <div class='mb-3'>
+              <label for='postalCode' class='form-label lead'
+                >Postal Code <span class='text-danger'>*</span></label
+              >
+              <input
+                type='text'
+                class='form-control'
+                id='postalCode'
+                placeholder='12345'
+                required
+              />
+            </div>
+
+            <!-- Help Selection Field -->
+            <div class='mb-3'>
+              <label for='helpType' class='form-label lead'
+                >How can we help? <span class='text-danger'>*</span></label
+              >
+              <select class='form-select' id='helpType' required>
+                <option value='' selected disabled>Select an option</option>
+                <option value='buy'>I want to buy land</option>
+                <option value='sell'>I want to sell my land</option>
+                <option value='info'>I need more information</option>
+              </select>
+            </div>
+
+            <!-- Consent Checkbox -->
+            <div class='mb-4 form-check'>
+              <input type='checkbox' class='form-check-input' id='consent' />
+              <label class='form-check-label' for='consent'
+                >I agree to receive updates and information through email</label
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <div class='d-grid'>
+              <button type='submit' class='btn submit-btn text-white py-2'>
+                SUBMIT INFO →
+              </button>
+            </div>
+
+            <!-- Privacy Text -->
+            <div class='text-center text-muted small mt-3'>
+              We respect your privacy. See our <a
+                href='#'
+                class='text-decoration-none'>Privacy Policy</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator (Visible only on mobile) -->
+  <div
+    class='position-absolute bottom-0 start-50 translate-middle-x pb-4 d-block d-lg-none text-white'
+  >
+    <i class='bi bi-chevron-down fs-3 animate-bounce'></i>
+  </div>
+</section>
+
+<style>
+  /* Hero section styling */
+  .hero-section {
+    background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  @media (max-width: 991.98px) {
+    .hero-section {
+      min-height: 130vh;
+    }
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero-title {
+      font-size: 2.8rem;
+    }
+  }
+
+  /* Form styling */
+  .form-control,
+  .form-select {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+  }
+
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .form-check-label {
+    padding-left: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #d4b978;
+    border-color: #d4b978;
+  }
+
+  .submit-btn:hover,
+  .submit-btn:focus {
+    background-color: #c5aa69;
+    border-color: #c5aa69;
+  }
+</style>

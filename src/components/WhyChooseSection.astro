@@ -1,0 +1,177 @@
+<section class='why-choose-section py-5'>
+  <div class='container'>
+    <!-- Mobile View (Stacked Cards) - Will be hidden on desktop -->
+    <div class='d-block d-lg-none'>
+      <h2 class='text-center display-5 fw-bold mb-5'>
+        Why Choose Whitetail Properties
+      </h2>
+
+      <!-- Card 1 -->
+      <div class='card mb-4 border-0 shadow'>
+        <div class='card-body text-center p-4'>
+          <div class='icon-circle mb-3 mx-auto'>
+            <img
+              src='/icons/for-sale-icon.png'
+              alt='Properties Sold'
+              width='50'
+            />
+          </div>
+          <h3 class='card-title h4 mb-3'>14 Properties Sold Every Day</h3>
+          <p class='card-text'>
+            Our agents are passionate outdoorsmen who understand the true value
+            of hunting and farm properties.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class='card mb-4 border-0 shadow'>
+        <div class='card-body text-center p-4'>
+          <div class='icon-circle mb-3 mx-auto'>
+            <img src='/icons/map-icon.png' alt='States Map' width='50' />
+          </div>
+          <h3 class='card-title h4 mb-3'>41 States Across America</h3>
+          <p class='card-text'>
+            Our agents are passionate outdoorsmen who understand the true value
+            of hunting and farm properties.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class='card mb-4 border-0 shadow'>
+        <div class='card-body text-center p-4'>
+          <div class='icon-circle mb-3 mx-auto'>
+            <img
+              src='/icons/specialists-icon.png'
+              alt='Land Specialists'
+              width='50'
+            />
+          </div>
+          <h3 class='card-title h4 mb-3'>350+ Land Specialists</h3>
+          <p class='card-text'>
+            Our agents are passionate outdoorsmen who understand the true value
+            of hunting and farm properties.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop View (Side-by-side Layout) - Will be hidden on mobile -->
+    <div class='d-none d-lg-block'>
+      <div class='row align-items-center'>
+        <!-- Left Column - Title -->
+        <div class='col-lg-4'>
+          <h2 class='display-5 fw-bold'>Why Choose Whitetail Properties</h2>
+        </div>
+
+        <!-- Right Column - Cards side by side -->
+        <div class='col-lg-8'>
+          <div class='row'>
+            <!-- Feature Card 1 -->
+            <div class='col-md-4'>
+              <div class='card h-100 border-0 shadow'>
+                <div class='card-body text-center p-4'>
+                  <div class='icon-circle mb-3 mx-auto'>
+                    <img
+                      src='/icons/for-sale-icon.png'
+                      alt='Properties Sold'
+                      width='50'
+                    />
+                  </div>
+                  <h3 class='card-title h5 mb-3'>
+                    14 Properties Sold Every Day
+                  </h3>
+                  <p class='card-text small'>
+                    Our agents are passionate outdoorsmen who understand the
+                    true value of hunting and farm properties.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div class='col-md-4'>
+              <div class='card h-100 border-0 shadow'>
+                <div class='card-body text-center p-4'>
+                  <div class='icon-circle mb-3 mx-auto'>
+                    <img
+                      src='/icons/map-icon.png'
+                      alt='States Map'
+                      width='50'
+                    />
+                  </div>
+                  <h3 class='card-title h5 mb-3'>41 States Across America</h3>
+                  <p class='card-text small'>
+                    Our agents are passionate outdoorsmen who understand the
+                    true value of hunting and farm properties.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div class='col-md-4'>
+              <div class='card h-100 border-0 shadow'>
+                <div class='card-body text-center p-4'>
+                  <div class='icon-circle mb-3 mx-auto'>
+                    <img
+                      src='/icons/specialists-icon.png'
+                      alt='Land Specialists'
+                      width='50'
+                    />
+                  </div>
+                  <h3 class='card-title h5 mb-3'>350+ Land Specialists</h3>
+                  <p class='card-text small'>
+                    Our agents are passionate outdoorsmen who understand the
+                    true value of hunting and farm properties.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Why Choose section styling */
+  .why-choose-section {
+    /* background-color: #dcdcdd; */
+    background-image: url("https://lightsail.wpsitestage.dev/build/assets/background-topography-top-left-Bq41VDsp.svg"),
+      url("https://lightsail.wpsitestage.dev/build/assets/background-topography-bottom-right-fz0-uggA.svg");
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      40% auto,
+      40% auto;
+  }
+
+  .why-choose-section > .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+</style>
