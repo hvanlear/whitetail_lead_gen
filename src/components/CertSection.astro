@@ -1,144 +1,108 @@
 ---
-// Industry Accreditations Section Component
+// Industry Accreditations Section Component with Improved Responsive Approach
 ---
 
-<section class='industry-accreditations py-5'>
-  <div class='container py-4'>
-    <!-- Mobile View (d-block d-lg-none) -->
-    <div class='d-block d-lg-none'>
-      <h2 class='fw-bold mb-3'>Industry Accreditations</h2>
+<section class='bg-topography py-5'>
+  <div class='container'>
+    <!-- Heading Section - Responsive with Bootstrap -->
+    <h2 class='text-center mb-3 mb-md-4 mobile-heading-adjust'>
+      <span class='d-none d-md-inline'>INDUSTRY LEADING ACCREDITATIONS</span>
+      <span class='d-md-none'>Industry Accreditations</span>
+    </h2>
 
-      <p class='mb-5'>
-        Accreditations for our Land Specialists assures our land buyers and
-        sellers that they're working with the most knowledgeable, dedicated and
-        qualified agents available
-      </p>
-
-      <!-- Mobile Accreditation Items - Stacked -->
-      <div class='d-flex flex-column align-items-center mb-4'>
-        <img
-          src='/images/certifications/nda-logo.png'
-          alt='National Deer Association'
-          class='certification-logo mb-3'
-          width='150'
-        />
-        <p class='fw-bold text-center mb-5'>NDA Deer Steward Level I</p>
-      </div>
-
-      <div class='d-flex flex-column align-items-center mb-4'>
-        <img
-          src='/images/certifications/alc-logo.png'
-          alt='Accredited Land Consultant'
-          class='certification-logo mb-3'
-          width='150'
-        />
-        <p class='fw-bold text-center mb-5'>Accredited Land Consultant</p>
-      </div>
-
-      <div class='d-flex flex-column align-items-center mb-4'>
-        <img
-          src='/images/certifications/faa-logo.png'
-          alt='FAA Certification'
-          class='certification-logo mb-3'
-          width='150'
-        />
-        <p class='fw-bold text-center mb-5'>
-          FAA Part 107 Remote Pilot Certification
-        </p>
-      </div>
-
-      <div class='d-flex flex-column align-items-center mb-4'>
-        <img
-          src='/images/certifications/wpcls-logo.png'
-          alt='Whitetail Properties Certified Land Specialist'
-          class='certification-logo mb-3'
-          width='150'
-        />
-        <p class='fw-bold text-center mb-5'>
-          Whitetail Properties Certified Land Specialist
-        </p>
-      </div>
-    </div>
-
-    <!-- Desktop View (d-none d-lg-block) -->
-    <div class='d-none d-lg-block'>
-      <h2 class='text-center display-5 fw-bold mb-4'>
-        INDUSTRY LEADING ACCREDITATIONS
-      </h2>
-
-      <p class='text-center mb-5 px-5 mw-75 mx-auto'>
+    <!-- Description text - Different for mobile vs desktop -->
+    <p class='text-center mx-auto px-3 mb-4 mb-md-5' style='max-width: 800px;'>
+      <span class='d-none d-md-inline'>
         Our commitment to putting your needs above everything is supported by
         our dedication to being the most educated and qualified Land Specialists
         with the deepest understanding of the land market. We're ready to show
         you why we are the trusted choice for helping sellers reach their goals
         quickly and maximizing their property's value.
-      </p>
+      </span>
+      <span class='d-md-none'>
+        Accreditations for our Land Specialists assures our land buyers and
+        sellers that they're working with the most knowledgeable, dedicated and
+        qualified agents available
+      </span>
+    </p>
 
-      <!-- Desktop Accreditation Items - Row -->
+    <!-- Accreditations List - Using Bootstrap Grid for Responsiveness -->
+    <div class='row justify-content-center g-4'>
+      <!-- NDA Deer Steward Level I -->
+      <div class='col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4'>
+        <div class='mb-3'>
+          <img
+            src='/images/certifications/nda-logo.png'
+            alt='NDA Deer Steward Level I'
+            class='img-fluid mx-auto'
+            style='max-height: 100px;'
+          />
+        </div>
+        <p class='fw-bold mb-0'>NDA Deer Steward Level I</p>
+      </div>
+
+      <!-- NDA Deer Steward Level II - Only visible on desktop -->
       <div
-        class='row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center mt-5'
+        class='col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4 d-none d-md-block'
       >
-        <!-- NDA Level I -->
-        <div class='col text-center'>
+        <div class='mb-3'>
           <img
-            src='/images/certifications/nda-logo.png'
-            alt='National Deer Association'
-            class='certification-logo mb-3'
-            width='120'
+            src='/images/certifications/NDA-logo.png'
+            alt='NDA Deer Steward Level II'
+            class='img-fluid mx-auto'
+            style='max-height: 100px;'
           />
-          <p class='fw-bold'>NDA Deer Steward Level I</p>
         </div>
+        <p class='fw-bold mb-0'>NDA Deer Steward Level II</p>
+      </div>
 
-        <!-- NDA Level II -->
-        <div class='col text-center'>
+      <!-- Accredited Land Consultant -->
+      <div class='col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4'>
+        <div class='mb-3'>
           <img
-            src='/images/certifications/nda-logo.png'
-            alt='National Deer Association'
-            class='certification-logo mb-3'
-            width='120'
-          />
-          <p class='fw-bold'>NDA Deer Steward Level II</p>
-        </div>
-
-        <!-- ALC -->
-        <div class='col text-center'>
-          <img
-            src='/images/certifications/alc-logo.png'
+            src='/images/certifications/ALC-logo.png'
             alt='Accredited Land Consultant'
-            class='certification-logo mb-3'
-            width='120'
+            class='img-fluid mx-auto'
+            style='max-height: 100px;'
           />
-          <p class='fw-bold'>Accredited Land Consultant</p>
         </div>
+        <p class='fw-bold mb-0'>Accredited Land Consultant</p>
+      </div>
 
-        <!-- WP Certified -->
-        <div class='col text-center'>
+      <!-- FAA Part 107 Remote Pilot Certification -->
+      <div class='col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4'>
+        <div class='mb-3'>
           <img
-            src='/images/certifications/wpcls-logo.png'
+            src='/images/certifications/FAA-logo.png'
+            alt='FAA Part 107 Remote Pilot Certification'
+            class='img-fluid mx-auto'
+            style='max-height: 100px;'
+          />
+        </div>
+        <p class='fw-bold mb-0'>FAA Part 107 Remote Pilot Certification</p>
+      </div>
+
+      <!-- Whitetail Properties Certified Land Specialist -->
+      <div class='col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-4'>
+        <div class='mb-3'>
+          <img
+            src='/images/certifications/WPCLS-logo.png'
             alt='Whitetail Properties Certified Land Specialist'
-            class='certification-logo mb-3'
-            width='120'
+            class='img-fluid mx-auto'
+            style='max-height: 100px;'
           />
-          <p class='fw-bold'>Whitetail Properties Certified Land Specialist</p>
         </div>
-
-        <!-- FAA -->
-        <div class='col text-center'>
-          <img
-            src='/images/certifications/faa-logo.png'
-            alt='FAA Certification'
-            class='certification-logo mb-3'
-            width='120'
-          />
-          <p class='fw-bold'>FAA Part 107 Remote Pilot Certification</p>
-        </div>
+        <p class='fw-bold mb-0'>
+          Whitetail Properties Certified Land Specialist
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-  .industry-accreditations {
+<!-- Only custom CSS required is for the background images -->
+<!-- <style>
+  .bg-topography {
     background-color: #f8f9fa;
     background-image: url("https://lightsail.wpsitestage.dev/build/assets/background-topography-top-left-Bq41VDsp.svg"),
       url("https://lightsail.wpsitestage.dev/build/assets/background-topography-bottom-right-fz0-uggA.svg");
@@ -147,17 +111,21 @@
       bottom right;
     background-repeat: no-repeat, no-repeat;
     background-size:
-      40% auto,
-      40% auto;
+      20% auto,
+      20% auto;
   }
 
-  .certification-logo {
-    height: auto;
-    object-fit: contain;
-  }
+  /* Media query for responsive background sizing */
+  @media screen and (max-width: 768px) {
+    .bg-topography {
+      background-size:
+        30% auto,
+        30% auto;
+    }
 
-  /* Center the main paragraph on desktop */
-  .mw-75 {
-    max-width: 75%;
+    /* Adjust heading size on mobile */
+    .mobile-heading-adjust {
+      font-size: 2rem;
+    }
   }
-</style>
+</style> -->
