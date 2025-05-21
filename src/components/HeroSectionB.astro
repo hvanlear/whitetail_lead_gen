@@ -1,7 +1,7 @@
 <!-- Version B - Combined Hero/Video Section (Zillow Style) -->
 <section class='hero-video-section'>
   <!-- Banner Header -->
-  <div class='banner-header'>
+  <div class='banner-header d-flex align-items-center'>
     <div class='container'>
       <div class='text-center py-4'>
         <h2 class='banner-title text-white text-uppercase mb-0'>
@@ -12,14 +12,14 @@
   </div>
 
   <div class='container py-5'>
-    <div class='row'>
+    <div class='row justify-content-between'>
       <!-- Left Column - Title and Video -->
-      <div class='col-lg-7 mb-5 mb-lg-0'>
+      <div class='col-lg-6 mb-5 mb-lg-0'>
         <!-- Pill Button -->
         <div class='mb-3'>
-          <a href='#' class='btn btn-outline-dark rounded-pill'
-            >Whitetail Properties Overview</a
-          >
+          <a href='#' class='btn btn-outline-dark rounded-pill'>
+            Whitetail Properties Overview
+          </a>
         </div>
 
         <!-- Main Heading -->
@@ -29,140 +29,110 @@
 
         <!-- Subtitle Text -->
         <p class='lead mb-5'>
-          Agents using Whitetail Properties on the majority of their listings
-          are winning 30% more listings than similar Non-Whitetail Agents<sup
-            >*</sup
-          >
+          Our specialized team connects buyers with exceptional properties and
+          helps sellers showcase their land's unique features that discerning
+          land enthusiasts appreciate.<sup>*</sup>
         </p>
 
-        <!-- Video Player with Play Button -->
-        <div
-          class='video-container position-relative mb-4 rounded overflow-hidden shadow'
-        >
-          <img
-            src='/images/video-thumbnail.jpg'
-            alt='Property Marketing Video'
-            class='img-fluid w-100'
-          />
-          <button class='play-button btn btn-light rounded-circle'>
-            <i class='bi bi-play-fill fs-4'></i>
-          </button>
+        <!-- Video Player - Now using iframe directly instead of thumbnail with play button -->
+        <div class='ratio ratio-16x9 mb-4 rounded overflow-hidden shadow'>
+          <iframe
+            src='https://www.youtube.com/embed/Ptukw3cxTEo'
+            title='Why Choose Whitetail Properties?'
+            allowfullscreen></iframe>
         </div>
       </div>
 
-      <!-- Right Column - Form -->
+      <!-- Right Column - Form (Using the form from your second paste) -->
       <div class='col-lg-5'>
-        <div class='form-container bg-white p-4 rounded shadow'>
-          <h3 class='h4 mb-4'>
-            See how Whitetail Properties can help you win 30% more listings in
-            your market
-          </h3>
-
+        <div class='form-container bg-white rounded shadow p-4'>
+          <h2 class='h3 text-center mb-4'>Lets Get Started</h2>
           <form>
-            <!-- First Name -->
+            <!-- Name Field -->
             <div class='mb-3'>
-              <label for='firstName' class='form-label'>First name*</label>
+              <label for='name' class='form-label lead'>
+                Name <span class='text-danger'>*</span>
+              </label>
               <input
                 type='text'
-                class='form-control form-control-lg'
-                id='firstName'
+                class='form-control'
+                id='name'
+                placeholder='e.g. John Smith'
                 required
               />
             </div>
 
-            <!-- Last Name -->
+            <!-- Email Field -->
             <div class='mb-3'>
-              <label for='lastName' class='form-label'>Last name*</label>
-              <input
-                type='text'
-                class='form-control form-control-lg'
-                id='lastName'
-                required
-              />
-            </div>
-
-            <!-- Email -->
-            <div class='mb-3'>
-              <label for='email' class='form-label'>Email*</label>
+              <label for='email' class='form-label lead'>
+                Email <span class='text-danger'>*</span>
+              </label>
               <input
                 type='email'
-                class='form-control form-control-lg'
+                class='form-control'
                 id='email'
+                placeholder='john@doe.com'
                 required
               />
             </div>
 
-            <!-- Phone Number -->
+            <!-- Phone Field -->
             <div class='mb-3'>
-              <label for='phone' class='form-label'>Phone Number*</label>
-              <div class='row g-0'>
-                <div class='col-4 col-md-3'>
-                  <select class='form-select form-select-lg' id='countryCode'>
-                    <option value='US'>United States</option>
-                  </select>
-                </div>
-                <div class='col-8 col-md-9'>
-                  <input
-                    type='tel'
-                    class='form-control form-control-lg'
-                    id='phone'
-                    placeholder='+1'
-                    required
-                  />
-                </div>
-              </div>
+              <label for='phone' class='form-label lead'>Phone</label>
+              <input
+                type='tel'
+                class='form-control'
+                id='phone'
+                placeholder='XXX XXX-XXXX'
+              />
             </div>
 
-            <!-- Postal Code -->
+            <!-- Postal Code Field -->
             <div class='mb-3'>
-              <label for='postalCode' class='form-label'>Postal Code*</label>
+              <label for='postalCode' class='form-label lead'>
+                Postal Code <span class='text-danger'>*</span>
+              </label>
               <input
                 type='text'
-                class='form-control form-control-lg'
+                class='form-control'
                 id='postalCode'
+                placeholder='12345'
                 required
               />
             </div>
 
-            <!-- Average Listings -->
+            <!-- Help Selection Field -->
             <div class='mb-3'>
-              <label for='avgListings' class='form-label'
-                >Avg. Listings per Year*</label
-              >
-              <select
-                class='form-select form-select-lg'
-                id='avgListings'
-                required
-              >
-                <option value='' selected>Please Select</option>
-                <option value='1-5'>1-5</option>
-                <option value='6-10'>6-10</option>
-                <option value='11-20'>11-20</option>
-                <option value='21+'>21+</option>
+              <label for='helpType' class='form-label lead'>
+                How can we help? <span class='text-danger'>*</span>
+              </label>
+              <select class='form-select' id='helpType' required>
+                <option value='' selected disabled>Select an option</option>
+                <option value='buy'>I want to buy land</option>
+                <option value='sell'>I want to sell my land</option>
+                <option value='info'>I need more information</option>
               </select>
             </div>
 
             <!-- Consent Checkbox -->
             <div class='mb-4 form-check'>
-              <input
-                type='checkbox'
-                class='form-check-input'
-                id='consent'
-                required
-              />
-              <label class='form-check-label small' for='consent'>
-                By checking the box, you expressly consent to Whitetail
-                Properties directly or by third parties acting on its behalf
-                sending marketing messages (including text messages using
-                automated technology) to the telephone number you provide.
+              <input type='checkbox' class='form-check-input' id='consent' />
+              <label class='form-check-label' for='consent'>
+                I agree to receive updates and information through email
               </label>
             </div>
 
             <!-- Submit Button -->
             <div class='d-grid'>
-              <button type='submit' class='btn btn-primary btn-lg submit-btn'
-                >Request Information</button
-              >
+              <button type='submit' class='btn submit-btn text-white py-2'>
+                SUBMIT INFO →
+              </button>
+            </div>
+
+            <!-- Privacy Text -->
+            <div class='text-center text-muted small mt-3'>
+              We respect your privacy. See our
+              <a href='#' class='text-decoration-none'>Privacy Policy</a>
             </div>
           </form>
         </div>
@@ -175,10 +145,11 @@
   /* Minimal custom CSS */
   .banner-header {
     background-color: #2a2a2a;
-    background-image: url("/images/land-sunset-banner.jpg");
+    background-image: url("/images/land.png");
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 320px;
   }
 
   .banner-header::before {
@@ -197,66 +168,49 @@
     font-weight: 600;
   }
 
-  .hero-video-section {
-    background-color: #f8f9fa;
-  }
-
-  .video-container {
-    aspect-ratio: 16 / 9;
-  }
-
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .play-button i {
-    margin-left: 5px;
-  }
-
-  .play-button:hover {
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .form-container {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
+  /* Form styling from your second paste */
   .form-control,
   .form-select {
-    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+  }
+
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .form-check-label {
+    padding-left: 0.25rem;
+    font-size: 0.95rem;
   }
 
   .submit-btn {
-    background-color: #2563eb;
-    border-color: #2563eb;
+    padding: 0.875rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #d4b978;
+    border-color: #d4b978;
   }
 
-  .submit-btn:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
+  .submit-btn:hover,
+  .submit-btn:focus {
+    background-color: #c5aa69;
+    border-color: #c5aa69;
   }
 
   @media (max-width: 991.98px) {
     .video-container {
       max-width: 100%;
       margin: 0 auto;
-    }
-
-    .play-button {
-      width: 60px;
-      height: 60px;
     }
   }
 </style>
