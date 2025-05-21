@@ -1,0 +1,167 @@
+---
+// FAQ Accordion Component
+---
+
+<section class='faq-section py-5'>
+  <div class='container'>
+    <h2 class='text-center display-5 fw-bold mb-5'>
+      Frequently Asked Questions
+    </h2>
+
+    <div class='accordion' id='faqAccordion'>
+      <!-- FAQ Item 1 -->
+      <div class='accordion-item mb-3 rounded'>
+        <h3 class='accordion-header'>
+          <button
+            class='accordion-button collapsed fw-bold'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#faqOne'
+            aria-expanded='false'
+            aria-controls='faqOne'
+          >
+            How do agricultural tax incentives affect my sale?
+          </button>
+        </h3>
+        <div
+          id='faqOne'
+          class='accordion-collapse collapse'
+          data-bs-parent='#faqAccordion'
+        >
+          <div class='accordion-body'>
+            Many of our properties qualify for agricultural exemptions that can
+            significantly reduce property taxes. Our land specialists can help
+            you understand the specific tax benefits available for each property
+            based on current use and your intended plans. We often see clients
+            save 40-60% on annual property tax through proper agricultural
+            classifications.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class='accordion-item mb-3 rounded'>
+        <h3 class='accordion-header'>
+          <button
+            class='accordion-button collapsed fw-bold'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#faqTwo'
+            aria-expanded='false'
+            aria-controls='faqTwo'
+          >
+            How do you verify the hunting potential of a property?
+          </button>
+        </h3>
+        <div
+          id='faqTwo'
+          class='accordion-collapse collapse'
+          data-bs-parent='#faqAccordion'
+        >
+          <div class='accordion-body'>
+            Our agents evaluate hunting potential using several methods,
+            including habitat assessment, trail camera surveys, and local
+            population data. We look at factors like food sources, water
+            availability, cover quality, and migration patterns. Many of our
+            agents are avid hunters themselves and understand what makes a
+            property valuable for hunting.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class='accordion-item mb-3 rounded'>
+        <h3 class='accordion-header'>
+          <button
+            class='accordion-button collapsed fw-bold'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#faqThree'
+            aria-expanded='false'
+            aria-controls='faqThree'
+          >
+            How do you verify the hunting potential of a property?
+          </button>
+        </h3>
+        <div
+          id='faqThree'
+          class='accordion-collapse collapse'
+          data-bs-parent='#faqAccordion'
+        >
+          <div class='accordion-body'>
+            Our team conducts thorough evaluations of each property's hunting
+            features. We assess game movement patterns, bedding areas, and
+            feeding locations. We also consider property improvements like food
+            plots, elevated stands, and access trails. This comprehensive
+            analysis helps buyers understand the true hunting value of the land.
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional FAQ items can be added here following the same pattern -->
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    background-color: #f8f9fa;
+    background-image: url("https://lightsail.wpsitestage.dev/build/assets/background-topography-top-left-Bq41VDsp.svg"),
+      url("https://lightsail.wpsitestage.dev/build/assets/background-topography-bottom-right-fz0-uggA.svg");
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      40% auto,
+      40% auto;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .accordion-item {
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1.15rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #fff;
+    color: #212529;
+    box-shadow: none;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: #e0e0e0;
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .accordion-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  @media (max-width: 767.98px) {
+    .accordion-button {
+      font-size: 1rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .accordion-body {
+      padding: 1.25rem;
+    }
+  }
+</style>

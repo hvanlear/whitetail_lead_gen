@@ -1,0 +1,163 @@
+---
+// Industry Accreditations Section Component
+---
+
+<section class='industry-accreditations py-5'>
+  <div class='container py-4'>
+    <!-- Mobile View (d-block d-lg-none) -->
+    <div class='d-block d-lg-none'>
+      <h2 class='fw-bold mb-3'>Industry Accreditations</h2>
+
+      <p class='mb-5'>
+        Accreditations for our Land Specialists assures our land buyers and
+        sellers that they're working with the most knowledgeable, dedicated and
+        qualified agents available
+      </p>
+
+      <!-- Mobile Accreditation Items - Stacked -->
+      <div class='d-flex flex-column align-items-center mb-4'>
+        <img
+          src='/images/certifications/nda-logo.png'
+          alt='National Deer Association'
+          class='certification-logo mb-3'
+          width='150'
+        />
+        <p class='fw-bold text-center mb-5'>NDA Deer Steward Level I</p>
+      </div>
+
+      <div class='d-flex flex-column align-items-center mb-4'>
+        <img
+          src='/images/certifications/alc-logo.png'
+          alt='Accredited Land Consultant'
+          class='certification-logo mb-3'
+          width='150'
+        />
+        <p class='fw-bold text-center mb-5'>Accredited Land Consultant</p>
+      </div>
+
+      <div class='d-flex flex-column align-items-center mb-4'>
+        <img
+          src='/images/certifications/faa-logo.png'
+          alt='FAA Certification'
+          class='certification-logo mb-3'
+          width='150'
+        />
+        <p class='fw-bold text-center mb-5'>
+          FAA Part 107 Remote Pilot Certification
+        </p>
+      </div>
+
+      <div class='d-flex flex-column align-items-center mb-4'>
+        <img
+          src='/images/certifications/wpcls-logo.png'
+          alt='Whitetail Properties Certified Land Specialist'
+          class='certification-logo mb-3'
+          width='150'
+        />
+        <p class='fw-bold text-center mb-5'>
+          Whitetail Properties Certified Land Specialist
+        </p>
+      </div>
+    </div>
+
+    <!-- Desktop View (d-none d-lg-block) -->
+    <div class='d-none d-lg-block'>
+      <h2 class='text-center display-5 fw-bold mb-4'>
+        INDUSTRY LEADING ACCREDITATIONS
+      </h2>
+
+      <p class='text-center mb-5 px-5 mw-75 mx-auto'>
+        Our commitment to putting your needs above everything is supported by
+        our dedication to being the most educated and qualified Land Specialists
+        with the deepest understanding of the land market. We're ready to show
+        you why we are the trusted choice for helping sellers reach their goals
+        quickly and maximizing their property's value.
+      </p>
+
+      <!-- Desktop Accreditation Items - Row -->
+      <div
+        class='row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center mt-5'
+      >
+        <!-- NDA Level I -->
+        <div class='col text-center'>
+          <img
+            src='/images/certifications/nda-logo.png'
+            alt='National Deer Association'
+            class='certification-logo mb-3'
+            width='120'
+          />
+          <p class='fw-bold'>NDA Deer Steward Level I</p>
+        </div>
+
+        <!-- NDA Level II -->
+        <div class='col text-center'>
+          <img
+            src='/images/certifications/nda-logo.png'
+            alt='National Deer Association'
+            class='certification-logo mb-3'
+            width='120'
+          />
+          <p class='fw-bold'>NDA Deer Steward Level II</p>
+        </div>
+
+        <!-- ALC -->
+        <div class='col text-center'>
+          <img
+            src='/images/certifications/alc-logo.png'
+            alt='Accredited Land Consultant'
+            class='certification-logo mb-3'
+            width='120'
+          />
+          <p class='fw-bold'>Accredited Land Consultant</p>
+        </div>
+
+        <!-- WP Certified -->
+        <div class='col text-center'>
+          <img
+            src='/images/certifications/wpcls-logo.png'
+            alt='Whitetail Properties Certified Land Specialist'
+            class='certification-logo mb-3'
+            width='120'
+          />
+          <p class='fw-bold'>Whitetail Properties Certified Land Specialist</p>
+        </div>
+
+        <!-- FAA -->
+        <div class='col text-center'>
+          <img
+            src='/images/certifications/faa-logo.png'
+            alt='FAA Certification'
+            class='certification-logo mb-3'
+            width='120'
+          />
+          <p class='fw-bold'>FAA Part 107 Remote Pilot Certification</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .industry-accreditations {
+    background-color: #f8f9fa;
+    background-image: url("https://lightsail.wpsitestage.dev/build/assets/background-topography-top-left-Bq41VDsp.svg"),
+      url("https://lightsail.wpsitestage.dev/build/assets/background-topography-bottom-right-fz0-uggA.svg");
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      40% auto,
+      40% auto;
+  }
+
+  .certification-logo {
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Center the main paragraph on desktop */
+  .mw-75 {
+    max-width: 75%;
+  }
+</style>
